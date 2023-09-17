@@ -368,7 +368,6 @@ button{
 
 .our-portfolio-li{
     width: calc((100% - 48px) / 3);
-    cursor: pointer;
 }
 
 .portfoli-section{
@@ -403,12 +402,43 @@ button{
     letter-spacing: 0.02em;
 }
 
+.portfolio-image{
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 1);;
+    color: var(--c-primary-light);
+    padding: 10px;
+    line-height: 1.2;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 240ms linear;
+}
+
+.our-portfolio-li:hover .overlay,
+.our-portfolio-li:focus .overlay{
+    transform: translateY(0%);
+}
+
+
 /* Footer */
 .footer-section{
     background-color: var(--c-primary);
     padding: 100px 0 100px
 }
 
+.footer-container-all{
+    display: flex;
+}
 
 .footer-logo {
     font-family: 'Raleway', sans-serif;
@@ -449,18 +479,11 @@ button{
     margin-bottom: 16px;
 }
 
-.footer-social {
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-}
-
 .footer-link{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
 }
 
 .footer-list{
