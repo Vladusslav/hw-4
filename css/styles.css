@@ -73,6 +73,23 @@ button{
             0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.current {
+    color: #404bbf;
+    position: relative;
+}
+
+.current::after {
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 2px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    bottom: -1px;
+    background-color: #404bbf;
+    content: "";
+}
+
 .header-ineer{
     display: flex;
     align-items: center;
