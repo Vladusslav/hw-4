@@ -5,6 +5,7 @@
     --c-background: #4D5AE5;
     --c-primary-tr: #434455;
     --c-background-light: #F4F4FD;
+    --c-background-modal: #FCFCFC;
 }
 
 
@@ -126,7 +127,7 @@ button{
 
 .nav-link{
     display: inline-block;
-    color: var(--c-brand) ;
+    color: var(--c-primary);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -393,7 +394,6 @@ button{
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    margin-bottom: 8px;
 }
 
 .portfolio-list{
@@ -508,7 +508,6 @@ button{
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    margin-right: 120px;
 }
 
 .footer-container{
@@ -561,4 +560,30 @@ button{
     fill: var(--c-background-light);
 }
 
+/* Modal */
+.backdrop{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(46, 47, 66, 0.4);
+}
 
+.is-hidden{
+    display: none;
+}
+
+.modal{
+    position: relative;
+    width: 408px;
+    background-color: var(--c-background-modal);
+    border-radius: 4px;
+    padding: 24px;
+}
+
+.modal-close{
+    position: absolute;
+    top: 24px;
+    right : 24px;
+}

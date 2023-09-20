@@ -43,9 +43,10 @@
         <section class="hero-section">
             <div class="container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button class="hero-button" type="button">Order Service</button>
+            <button class="hero-button" type="button" data-modal-close-open>Order Service</button>
             </div>
         </section>
+
         <!-- Advantages section -->
         <section class="advantage-section section">
             <div class="container">
@@ -90,6 +91,7 @@
               </ul>
             </div>
             </section>
+
         <!-- Our Team section -->
         <section class="team-section section">
             <div class="container">
@@ -246,6 +248,7 @@
               </ul>
             </div>
             </section>
+
         <!-- Our Portfolio -->
         <section class="portfoli-section section">
             <div class="container">
@@ -343,6 +346,7 @@
             </div>
             </section>
     </main>
+
     <footer class="footer-section">
         <div class="container footer-container-all">
             <div class="footer-container">
@@ -382,7 +386,27 @@
                     </li>
                 </ul>
             </div>
+            <div>
+                <p class="footer-paragraf">Subscribe</p>
+                <form class="footer-form"></form>
+                <label class="footer-label">
+                    <input class="footer-input" name="user" type="email" placeholder="email">
+                    <button class="footer-button" type="submit">
+                        " Subscribe "
+                        <svg class="footer-svg" width="24" height="24">
+                            <use href=""></use>
+                        </svg> 
+                    </button>
+                </label>
+            </div>
         </div>
     </footer>
+
+        <!-- Modal-->
+    <div class="backdrop " <!--is-hidden--!> data-modal>
+        <div class="modal">
+            <button class="modal-close" type="button" data-modal-close>Х</button>
+        </div>
+    </div>
 </body>
 </html>
